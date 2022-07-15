@@ -84,11 +84,10 @@ let config = {
       position: "top_right",
       config: {
         apiKey: "ce4671f715742df04bd73bc06028da2d",
-        title: "Kavya's Weather Report",
         dataNum: 5,
         dataType: "daily",
-        height: "200px",
-        width: "400px",
+        height: "300px",
+        width: "500px",
         lat: 37.5485,
         lon: 121.9886,
         units: "imperial",
