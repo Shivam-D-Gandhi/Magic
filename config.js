@@ -91,6 +91,7 @@ let config = {
         lat: 37.5485,
         lon: 121.9886,
         units: "imperial",
+        iconURLBase: "https://openweathermap.org/img/wn/",
         showIcon: true,
         showRain: true,
         includeSnow: true,
