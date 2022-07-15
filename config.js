@@ -91,6 +91,8 @@ let config = {
         lat: 37.5485,
         lon: 121.9886,
         units: "imperial",
+        title: "Kavya's Weather Report",
+        dailyLabel: "date+days_of_week",
         iconURLBase: "https://openweathermap.org/img/wn/",
         showIcon: true,
         showRain: true,
