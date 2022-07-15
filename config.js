@@ -8,7 +8,7 @@
  * and https://docs.magicmirror.builders/modules/configuration.html
  */
 let config = {
-  address: "localhost", // Address to listen on, can be:
+  address: "0.0.0.0", // Address to listen on, can be:
   // - "localhost", "127.0.0.1", "::1" to listen on loopback interface
   // - another specific IPv4/6 to listen on a specific interface
   // - "0.0.0.0", "::" to listen on any interface
@@ -16,7 +16,13 @@ let config = {
   port: 8080,
   basePath: "/", // The URL path where MagicMirror² is hosted. If you are using a Reverse proxy
   // you must set the sub path here. basePath must end with a /
-  ipWhitelist: ["127.0.0.1", "::ffff:127.0.0.1", "::1"], // Set [] to allow all IP addresses
+  ipWhitelist: [
+    "127.0.0.1",
+    "::ffff:127.0.0.1",
+    "::1",
+    "::ffff:192.168.0.1/120",
+    "192.168.0.1/24",
+  ], // Set [] to allow all IP addresses
   // or add a specific IPv4 of 192.168.1.5 :
   // ["127.0.0.1", "::ffff:127.0.0.1", "::1", "::ffff:192.168.1.5"],
   // or IPv4 range of 192.168.3.0 --> 192.168.3.15 use CIDR format :
@@ -44,6 +50,15 @@ let config = {
     {
       module: "MMM-Breathwork",
       position: "bottom_right",
+    },
+    {
+      module: "MMM-Remote-Control",
+      // uncomment the following line to show the URL of the remote control on the mirror
+      // position: 'bottom_left',
+      // you can hide this module afterwards from the remote control itself
+      config: {
+        apiKey: "d2c03a8a83094983aa1bb616ae84f894",
+      },
     },
     {
       module: "updatenotification",
