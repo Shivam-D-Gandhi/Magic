@@ -80,14 +80,21 @@ let config = {
       position: "lower_third",
     },
     {
-      module: "weather",
+      module: "MMM-WeatherChart",
       position: "top_right",
       config: {
-        weatherProvider: "openweathermap",
-        type: "current",
-        location: "New York",
-        locationID: "5128581", //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
         apiKey: "ce4671f715742df04bd73bc06028da2d",
+        dataNum: 5,
+        dataType: "daily",
+        height: "500px",
+        width: "800px",
+        lat: 37.5485,
+        lon: 121.9886,
+        units: "imperial",
+        showRain: true,
+        includeSnow: true,
+        showSnow: true,
+        showIcon: true,
       },
     },
     {
