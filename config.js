@@ -61,6 +61,9 @@ let config = {
     {
       module: "clock",
       position: "top_left",
+      timeFormat: "12",
+      showPeriodUpper: "true",
+      clockBold: "true",
     },
     {
       module: "calendar",
