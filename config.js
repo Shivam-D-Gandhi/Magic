@@ -67,16 +67,11 @@ let config = {
       clockBold: "true",
     },
     {
-      module: "calendar",
-      header: "US Holidays",
+      module: "MMM-quote-of-the-day",
       position: "top_left",
       config: {
-        calendars: [
-          {
-            symbol: "calendar-check",
-            url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics",
-          },
-        ],
+        language: "en",
+        updateInterval: "1d",
       },
     },
     {
