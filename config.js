@@ -68,6 +68,7 @@ let config = {
       config: {
         textLimit: 1000,
         lineLimit: 10,
+        detectLanguageApiKey: "2fc39f1502f3cf6cb5737dfa01b97610",
         languageSet: ["en", "es"],
         updateInterval: 120000,
       },
