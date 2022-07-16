@@ -48,7 +48,7 @@ let config = {
     {
       module: "MMM-Remote-Control",
       // uncomment the following line to show the URL of the remote control on the mirror
-      position: "top_right",
+      position: "bottom_left",
       // you can hide this module afterwards from the remote control itself
       config: {
         apiKey: "d2c03a8a83094983aa1bb616ae84f894",
@@ -63,14 +63,16 @@ let config = {
       position: "top_left",
     },
     {
-      module: "MMM-PoemOfTheDay",
+      module: "calendar",
+      header: "US Holidays",
       position: "top_left",
       config: {
-        textLimit: 1000,
-        lineLimit: 10,
-        detectLanguageApiKey: "2fc39f1502f3cf6cb5737dfa01b97610",
-        languageSet: ["en"],
-        updateInterval: 120000,
+        calendars: [
+          {
+            symbol: "calendar-check",
+            url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics",
+          },
+        ],
       },
     },
     {
