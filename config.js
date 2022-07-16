@@ -29,8 +29,8 @@ let config = {
   language: "en",
   locale: "en-US",
   logLevel: ["INFO", "LOG", "WARN", "ERROR"], // Add "DEBUG" for even more logging
-  timeFormat: 24,
-  units: "metric",
+  timeFormat: 12,
+  units: "imperial",
   // serverOnly:  true/false/"local" ,
   // local for armv6l processors, default
   //   starts serveronly and then starts chrome browser
@@ -62,6 +62,7 @@ let config = {
       module: "clock",
       position: "top_left",
       timeFormat: "12",
+      showPeriod: "true",
       showPeriodUpper: "true",
       clockBold: "true",
     },
