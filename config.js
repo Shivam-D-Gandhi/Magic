@@ -63,16 +63,13 @@ let config = {
       position: "top_left",
     },
     {
-      module: "calendar",
-      header: "US Holidays",
+      module: "MMM-PoemOfTheDay",
       position: "top_left",
       config: {
-        calendars: [
-          {
-            symbol: "calendar-check",
-            url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics",
-          },
-        ],
+        textLimit: 1000,
+        lineLimit: 10,
+        languageSet: ["en", "es"],
+        updateInterval: 120000,
       },
     },
     {
