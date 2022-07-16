@@ -63,16 +63,6 @@ let config = {
       position: "top_left",
     },
     {
-      module: "MMM-PoemOfTheDay",
-      position: "top_left",
-      config: {
-        textLimit: 1000,
-        lineLimit: 10,
-        languageSet: ["en", "es"],
-        updateInterval: 120000,
-      },
-    },
-    {
       module: "compliments",
       position: "lower_third",
     },
