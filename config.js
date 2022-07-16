@@ -62,17 +62,17 @@ let config = {
       module: "clock",
       position: "top_left",
     },
- {
-    module: "MMM-PoemOfTheDay",
-    position: "top_left",
-    config: {
-      textLimit: 100,
-      lineLimit: 10,
-      detectLanguageApiKey: "{API_KEY}",
-      languageSet: ["en", "es"],
-      updateInterval: 120000
-    }
-  }
+    {
+      module: "MMM-PoemOfTheDay",
+      position: "top_left",
+      config: {
+        textLimit: 100,
+        lineLimit: 10,
+        detectLanguageApiKey: "{API_KEY}",
+        languageSet: ["en", "es"],
+        updateInterval: 120000,
+      },
+    },
     {
       module: "compliments",
       position: "lower_third",
