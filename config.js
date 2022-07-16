@@ -13,7 +13,7 @@ let config = {
   // - another specific IPv4/6 to listen on a specific interface
   // - "0.0.0.0", "::" to listen on any interface
   // Default, when address config is left out or empty, is "localhost"
-  port: 8080,
+  port: 8090,
   basePath: "/", // The URL path where MagicMirror² is hosted. If you are using a Reverse proxy
   // you must set the sub path here. basePath must end with a /
   ipWhitelist: [], // Set [] to allow all IP addresses
@@ -48,7 +48,7 @@ let config = {
     {
       module: "MMM-Remote-Control",
       // uncomment the following line to show the URL of the remote control on the mirror
-      position: "bottom_left",
+      position: "top_right",
       // you can hide this module afterwards from the remote control itself
       config: {
         apiKey: "d2c03a8a83094983aa1bb616ae84f894",
