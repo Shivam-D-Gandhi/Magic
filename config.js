@@ -62,19 +62,17 @@ let config = {
       module: "clock",
       position: "top_left",
     },
-    {
-      module: "calendar",
-      header: "US Holidays",
-      position: "top_left",
-      config: {
-        calendars: [
-          {
-            symbol: "calendar-check",
-            url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics",
-          },
-        ],
-      },
-    },
+ {
+    module: "MMM-PoemOfTheDay",
+    position: "top_left",
+    config: {
+      textLimit: 100,
+      lineLimit: 10,
+      detectLanguageApiKey: "{API_KEY}",
+      languageSet: ["en", "es"],
+      updateInterval: 120000
+    }
+  }
     {
       module: "compliments",
       position: "lower_third",
