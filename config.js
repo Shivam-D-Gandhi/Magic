@@ -79,14 +79,14 @@ let config = {
         ],
       },
     },
-    {
-      module: "MMM-quote-of-the-day",
-      position: "lower_third",
-      config: {
-        language: "en",
-        updateInterval: "1d",
-      },
-    },
+    //    {
+    //      module: "MMM-quote-of-the-day",
+    //      position: "lower_third",
+    //      config: {
+    //        language: "en",
+    //        updateInterval: "1d",
+    //      },
+    //    },
     {
       module: "compliments",
       position: "lower_third",
